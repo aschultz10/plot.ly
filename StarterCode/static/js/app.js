@@ -65,7 +65,7 @@ function horizontal(id) {
 function dropdown() {
     var dropdown = d3.select("#selDataset");
     // Pull data w d3
-    d3.json("data/samples.json").then((data)=> {
+    d3.json("samples.json").then((data)=> {
         console.log(data)
         data.names.forEach(function(name) {
             dropdown.
